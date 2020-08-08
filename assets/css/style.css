@@ -27,3 +27,47 @@ header nav ul {
     font-weight: lighter;
     font-size: 1.55vw;
   }
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    color: black;
+    text-shadow: 0 2px 0 rgba(122, 59, 59, 0.07);
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+   
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    background-color: grey;
+    
+  }
+
+.box-text {
+    color: tomato;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin: 10px;
+    text-align: center;
+  }
