@@ -45,13 +45,13 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 25px;
+  grid-row-gap: 0px;
   background-image: url("../img/poppy.JPG");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
   color: tomato;
   }
 
@@ -59,10 +59,14 @@ html {
   background-color: lightgrey;
   padding: 10px;
   font-size: 100%;
-  margin: 10px;
+  margin: 5px;
   text-align: center;
   padding: auto;
   border: 3px solid black;
+}
+
+.container img {
+  width: 100%;
 }
 
 .container h2 {
@@ -100,4 +104,16 @@ footer {
   flex-wrap: wrap;
   font-size: larger;
 }
-  
+
+p.color:hover {
+  color: purple;
+  font-style: italic;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }
