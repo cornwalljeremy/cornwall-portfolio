@@ -21,7 +21,8 @@ header nav ul {
     align-items: center;
     list-style: none;
   }
-  header nav ul li a {
+
+header nav ul li a {
     color: white;
     padding: 10px 15px;
     font-weight: lighter;
@@ -36,11 +37,12 @@ header nav ul {
 html {
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 600;
     font-size: 10px;
     color: black;
-    text-shadow: 0 2px 0 rgba(122, 59, 59, 0.07);
+    text-align: left;
+   
   }
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -62,15 +64,26 @@ html {
   padding: auto;
   border: 3px solid black;
 }
+
 .container h2 {
-  text-align: center;
+  text-align: right;
   padding: 5px 0px;
+  color: black;
 }
+
+.container p {
+  text-align: justify;
+}
+
+.container ul li {
+  text-align: left;
+}
+
 .who {
   grid-row-start: 1;
 }
 .contact { 
-  grid-row-start: 4;
+  grid-row-start: 3;
 }
 .my-work { 
   grid-row-start: 1;
@@ -78,5 +91,13 @@ html {
 .photos { 
   grid-row-start: 2;
 }
-
+footer {
+  background: navy;
+  color: white;
+  padding: 50px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: larger;
+}
   
