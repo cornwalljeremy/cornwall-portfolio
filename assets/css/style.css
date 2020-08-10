@@ -9,6 +9,9 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  header h1 {
+    font-size: xx-large;
+  }
 
 header nav {
   margin: 7px 0;
